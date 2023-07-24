@@ -16,9 +16,11 @@ void Task19()
     23432 -> да */
 
     int number = Input("Введите число: ");
-    string numberStr = Convert.ToString(number);
+    // string numberStr = Convert.ToString(number);
 
-    if (numberStr[0] == numberStr[4] && numberStr[1] == numberStr[3])
+    //if (numberStr[0] == numberStr[4] && numberStr[1] == numberStr[3])
+    if (number/10000 == number%10 
+        && number/1000%10 == number/10%10)
     {
         Console.WriteLine($"Число {number} палиндром");
     }
